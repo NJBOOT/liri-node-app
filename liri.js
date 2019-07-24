@@ -69,7 +69,7 @@ function spotifyThis(input) {
     spotify
     .search({ type: 'track', query: input })
   .then(function(response) {
-      for (var i=0; i <40; i++){
+      for (var i=0; i <20; i++){
 
         var responseSong =
         "-----------------------------------------------" +
