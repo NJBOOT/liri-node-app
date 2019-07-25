@@ -15,6 +15,13 @@ var option = process.argv[2]
 var input = process.argv[3]
 // var multInput = process.argv[3] + "+" + process.argv[4]
 
+// bonus attempt
+var data = "\n"+option +" "+ input
+
+fs.appendFile("log.txt",data,(err) => {
+    if (err) console.log(err);
+});
+
 // main logic
 switch (option) {
     case "concert-this":
