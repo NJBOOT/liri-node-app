@@ -13,7 +13,11 @@ var inquirer = require("inquirer");
 
 var option = process.argv[2]
 var input = process.argv[3]
-// var multInput = process.argv[3] + "+" + process.argv[4]
+
+// handling for input with multiple words
+for (var i = 4; i < process.argv.length; i++){
+    input += "+" + process.argv[i]
+}
 
 // bonus attempt
 var data = "\n"+option +" "+ input
